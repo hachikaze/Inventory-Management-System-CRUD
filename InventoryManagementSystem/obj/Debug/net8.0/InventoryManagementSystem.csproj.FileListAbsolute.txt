@@ -1,0 +1,14 @@
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net8.0\InventoryManagementSystem.exe
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net8.0\InventoryManagementSystem.deps.json
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net8.0\InventoryManagementSystem.runtimeconfig.json
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net8.0\InventoryManagementSystem.dll
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net8.0\InventoryManagementSystem.pdb
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.AssemblyInfoInputs.cache
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.AssemblyInfo.cs
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.dll
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0\refint\InventoryManagementSystem.dll
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.pdb
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.genruntimeconfig.cache
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0\ref\InventoryManagementSystem.dll
