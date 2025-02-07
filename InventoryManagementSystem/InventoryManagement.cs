@@ -50,9 +50,14 @@ namespace InventoryManagementSystem
             }
         }
 
+        public static Product? FindProductById(int productId)
+        {
+            return products.Find(x => x.productId == productId);
+        }
+
         public static void removeProduct(int productId)
         {
-            Product? productToRemove = products.Find(x => x.productId == productId);
+            Product? productToRemove = FindProductById(productId);
 
             if (productToRemove != null)
             {
@@ -68,7 +73,7 @@ namespace InventoryManagementSystem
 
         public static void updateProduct(int productId, int newQuantity)
         {
-            Product? productToUpdate = products.Find(x => x.productId == productId);
+            Product? productToUpdate = FindProductById(productId);
 
             if (productToUpdate != null)
             {

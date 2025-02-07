@@ -12,3 +12,4 @@ C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSyst
 C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.pdb
 C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.genruntimeconfig.cache
 C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0\ref\InventoryManagementSystem.dll
+C:\Users\Bravo 15\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0\InventoryManagementSystem.sourcelink.json

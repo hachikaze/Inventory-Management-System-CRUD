@@ -7,7 +7,6 @@ namespace InventoryManagementSystem
     {
         static void Main(string[] args)
         {
-            Program program = new Program();
 
             bool exit = true;
             while (exit!=false)
