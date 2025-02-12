@@ -56,7 +56,7 @@ SELECT HireDate, DATE_FORMAT(HireDate, "%M, %d, %Y") AS ConvertedHireDate FROM e
 -- 7.) Retrieve all employees along with their department names.
 SELECT * FROM employees e
 JOIN departments d ON e.DepartmentID = d.DepartmentID;
-
+ 
 -- 8.) Retrieve the employees who earn more than the average salary.
 SELECT * FROM employees
 WHERE Salary > (SELECT AVG(Salary) FROM employees);
@@ -99,3 +99,75 @@ DELIMITER ;
 CALL UpdateITSalary();
 
 select * from employees;
+
+-- Self Exercise
+
+INSERT INTO employees VALUES (11, 'Michael', 'Jordan', 1, 50000, '2025-01-27');
+
+-- Show the full name of IT employees along with their department name.
+SELECT CONCAT(FirstName, ' ', LastName) As 'Full Name', d.DepartmentName AS 'Department Name' FROM employees e
+JOIN departments d ON e.DepartmentID = d.DepartmentID
+WHERE d.DepartmentName = 'IT';
+
+-- Retrieve all employees' first and last names.
+SELECT FirstName AS 'First Name', LastName AS 'Last Name' FROM employees;
+
+-- Find the names of employees who work in the IT department.
+SELECT CONCAT(FirstName, ' ', LastName) AS Name, d.DepartmentName FROM employees e
+JOIN departments d ON e.DepartmentID = d.DepartmentID
+WHERE d.DepartmentName = 'IT';
+
+-- List all employees hired after January 1, 2020.
+SELECT * FROM employees
+WHERE HireDate > '2020-01-1';
+
+-- Display the total number of employees in each department.
+SELECT DepartmentID, COUNT(*) AS 'No. of Employees in each Department' 
+FROM employees
+GROUP BY DepartmentID;
+
+-- Calculate the average salary of employees in each department.
+SELECT AVG(Salary), DepartmentID
+FROM employees
+GROUP BY DepartmentID;
+
+-- Find the highest salary in the company.
+SELECT MAX(Salary) AS 'Highest Salary' FROM employees;
+
+SELECT d.DepartmentName AS 'Dept. Name', e.Salary
+FROM employees e
+JOIN departments d ON e.DepartmentID = d.DepartmentID
+WHERE e.Salary = (SELECT MAX(Salary) FROM employees);
+
+-- List the departments along with the number of employees in each, sorted by the number of employees in descending order.
+SELECT d.DepartmentName AS 'Dept.Name', COUNT(*) AS 'No. of Employees' FROM departments d
+JOIN employees e ON d.DepartmentID = e.DepartmentID
+GROUP BY e.DepartmentID
+ORDER BY COUNT(*) DESC;
+
+--  Retrieve the full name (first and last name) of employees along with their department names.
+SELECT CONCAT(e.FirstName, ' ', LastName) AS 'Full Name', d.DepartmentName
+FROM employees e
+JOIN departments d ON e.DepartmentID = d.DepartmentID;
+
+-- Find employees who earn more than the average salary in their department.
+SELECT CONCAT(e.FirstName, ' ', e.LastName) AS 'Full Name', d.DepartmentName
+FROM employees e
+JOIN departments d ON e.DepartmentID = d.DepartmentID
+WHERE e.Salary > (SELECT AVG(e2.Salary) FROM employees e2 WHERE e2.DepartmentID = e.DepartmentID);
+
+select * from employees;
+
+CREATE TEMPORARY TABLE tbTemp (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    age INT
+);
+
+INSERT INTO tbTemp (name, age) VALUES ('John Doe', 25);
+
+SELECT * FROM tbTemp;
+
+DROP TEMPORARY TABLE IF EXISTS tbTemp;
+
+SELECT * FROM tbTemp;
