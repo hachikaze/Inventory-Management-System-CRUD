@@ -1,16 +1,29 @@
-# InventoryManagementSystem-CRUD
+# Inventory Management System - CRUD
 
-<html>
- <head>
- </head>
-  <body>
-    <h2>Add Product</h2>
-    <img src="InventoryManagementSystem/ims.png" alt="Pills Image">
-    <h2>View Product List</h2>
-    <img src="InventoryManagementSystem/ims2.png" alt="Pills Image">
-    <h2>Update Product</h2>
-    <img src="InventoryManagementSystem/ims_3.png" alt="Pills Image">
-    <h2>Delete Product</h2>
-    <img src="InventoryManagementSystem/ims4.png" alt="Pills Image">
-  </body>
-</html>
+## Overview
+This project is a simple Inventory Management System that allows users to **add, view, update, and delete products**.
+
+## Features
+- 🛒 **Add Product**
+- 📜 **View Product List**
+- ✏️ **Update Product**
+- ❌ **Delete Product**
+
+## Screenshots
+
+### Add Product
+![Add Product](InventoryManagementSystem/ims.png)
+
+### View Product List
+![View Product List](InventoryManagementSystem/ims2.png)
+
+### Update Product
+![Update Product](InventoryManagementSystem/ims_3.png)
+
+### Delete Product
+![Delete Product](InventoryManagementSystem/ims4.png)
+
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/InventoryManagementSystem-CRUD.git
